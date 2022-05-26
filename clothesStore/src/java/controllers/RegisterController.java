@@ -97,24 +97,23 @@ public class RegisterController extends HttpServlet {
         try {
             Account account = null;
             String userName = request.getParameter("userName");
+            request.setAttribute("userName", userName);
+            
             String name = request.getParameter("name");
+            request.setAttribute("name", name);
             String address = request.getParameter("address");
+            request.setAttribute("address", address);
             String phone = request.getParameter("phone");
             System.out.println("regex: " + Pattern.matches("[0-9]{10}", phone));
 //            check so dien thoai 10 digits bang regex
             if(!Pattern.matches("[0-9]{10}", phone)){
                 throw new Exception("Please Input Real Phone Number!!!");
             }
-            
+            request.setAttribute("phone", phone);
             String email = request.getParameter("email");
+            request.setAttribute("email", email);
             String password = request.getParameter("password");
             String password2 = request.getParameter("password2");
-            
-            request.setAttribute("userName", userName);
-            request.setAttribute("name", name);
-            request.setAttribute("address", address);
-            request.setAttribute("phone", phone);
-            request.setAttribute("email", email);
             if (password.compareTo(password2) != 0) {
                 request.setAttribute("action", "index");
                 throw new Exception("Repeat your password not same!!!");
@@ -125,8 +124,7 @@ public class RegisterController extends HttpServlet {
                     request.setAttribute("action", "index");
                     throw new Exception("User name allready existed!!!");
                 }
-            }
-            
+            }        
             String encodePass = null;
             MessageDigest digest;
             digest = MessageDigest.getInstance("SHA-256");
