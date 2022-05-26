@@ -1,7 +1,7 @@
-<h1>Change Confirmation</h1>
+<h1 class="row d-flex justify-content-center align-items-center">Change Confirmation</h1>
 <hr/>
-<div class="row">
-    <div class="col">
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col d-flex justify-content-center align-items-center">
         <form action="disable.do">
             <br/>
             <h5>Do you want to change that record? ${id}</h5>
@@ -12,5 +12,4 @@
         </form>
         <div style="font-style: italic" class="mt-3 text-danger">${errorMessage}</div>
     </div>
-    <div class="col"></div>
 </div>    

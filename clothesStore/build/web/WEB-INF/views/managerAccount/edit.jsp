@@ -2,10 +2,10 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h1>Edit Account</h1>
+<h2 class="d-flex justify-content-center">Edit Account</h2>
 <hr/>
-<div class="row">
-    <div class="col">
+<div class="row d-flex justify-content-center">
+    <div class="px-5 col-lg-6 ">
         <form action="${pageContext.request.contextPath}/managerAccount/update.do">
             <div class="mb-3 mt-3">
                 <label class="form-label h3">Id: ${account.id}</label>
@@ -45,5 +45,4 @@
         </form>
         <div style="font-style: italic" class="mt-3 text-danger">${errorMessage}</div>
     </div>
-    <div class="col"></div>
 </div>

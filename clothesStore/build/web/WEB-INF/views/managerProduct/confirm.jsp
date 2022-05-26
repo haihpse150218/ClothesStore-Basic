@@ -1,6 +1,6 @@
-<h1>Delete Confirmation</h1>
+<h1 class="row d-flex justify-content-center align-items-center">Delete Confirmation</h1>
 <hr/>
-<div class="row">
+<div class="row d-flex justify-content-center align-items-center">
     <div class="col">
         <form action="delete.do">
             <br/>

@@ -2,9 +2,9 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h1>Edit Product</h1>
+<h1 class="row d-flex justify-content-center align-items-center">Edit Product</h1>
 <hr/>
-<div class="row">
+<div class="row d-flex justify-content-center align-items-center">
     <div class="col">
         <form action="${pageContext.request.contextPath}/managerProduct/update.do">
             <div class="mb-3 mt-3">

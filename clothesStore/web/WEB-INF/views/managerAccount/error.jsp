@@ -7,6 +7,6 @@
         <title>Product Error</title>
     </head>
     <body>
-        <h3 class="mt-3 text-danger">There is no such action in the ${controller} controller.</h3>
+        <h3 class="mt-3 text-danger d-flex justify-content-center align-items-center">There is no such action in the ${controller} controller.</h3>
     </body>
 </html>
