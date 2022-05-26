@@ -1,0 +1,68 @@
+.header{
+    position: relative;
+    height: 60px;
+}
+
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.header-text{  
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: right;
+}
+
+.header-link {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.page-header {
+    border-bottom: 1px solid lightgray;
+}
+
+.content {
+    min-height: 300px;
+}
+
+.btn-default {
+    color: darkblue;
+    background-color: #d58512;
+}
+
+.btn-outline-default {
+    color: #212529;
+    border-color: #212529;
+}
+
+.btn-outline-default:hover {
+    background-color: white;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*quantity form*/
+icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon-sm {
+    width: 2rem;
+    height: 2rem;
+    
+}
+/*end quantity form*/
