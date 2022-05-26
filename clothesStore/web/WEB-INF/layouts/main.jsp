@@ -135,19 +135,14 @@
 //   chatbot script
 
 </script>
-<script>
+<!--<script>
 $(document).ready(function(){
   $("#startChatButton").click(function(){
     $("#startChatButton").hide();
     $("#chatFrame").show();
   });
 });
-</script>
-<h2>This is a heading</h2>
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
+</script>-->
 </body>
 
 
